@@ -1,0 +1,13 @@
+#Uniquement le load balancing
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: webapp-sql-service
+# spec:
+#   type: LoadBalancer
+#   selector:
+#     app: webapp-sql
+#   ports:
+#     - protocol: TCP
+#       port: 50001
+#       targetPort: 80
